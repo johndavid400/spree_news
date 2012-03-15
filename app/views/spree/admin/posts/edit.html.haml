@@ -1,0 +1,6 @@
+= render :partial => 'spree/admin/shared/configuration_menu'
+%h1= "Editing Post"
+
+= form_for [:admin, @post] do |f|
+  = render :partial => 'form', :locals => {:f => f}
+  = render :partial => 'spree/admin/shared/edit_resource_links'
