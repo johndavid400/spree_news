@@ -9,23 +9,23 @@ Installation
 
 Create a new rails/spree app:
 
-    $ rails new mystore
-    $ cd mystore
-    $ spree install (might require running 'gem install spree' first)
+    rails new mystore
+    cd mystore
+    spree install (might require running 'gem install spree' first)
 
 Then add the following to your Gemfile:
 
-    $ gem 'spree_news'
-    $ gem 'haml'
+    gem 'spree_news'
+    gem 'haml'
 
 Then install the extension and start the server: 
 
-    $ bundle install
-    $ rails g spree_news:install (select 'yes' to run migrations)
-    $ rails s
+    bundle install
+    rails g spree_news:install (select 'yes' to run migrations)
+    rails s
 
 
-Installation
+Usage
 =======
 
 To use, go to /admin and select the 'posts' tab. Create a new post with a title and description and select the 'published' check box to make it appear on the home page.
