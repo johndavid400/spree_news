@@ -3,25 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .news-ticker {
-  background: #D3D5BA;
-  width: 290px;
-  float: right;
-  margin: 10px 8px 10px 10px;
+  h3 {
+    color: #00ADEE;
+  }
+  background: white;
+  margin: 10px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
 }
 
 #news-container {
-  border: 1px solid #333333;
+  margin-top: -15px;
+ border: 1px solid #aaaaaa;
 }
 
 #news-container ul li div {
-  border: 1px solid #aaaaaa;
-  height: 75px;
-  width: 280px;
-  background: #EEE7DF;
+  min-height: 75px;
+  background: white;
   padding: 5px 5px 5px 5px;
 }
 
-.new-post {
-  margin-bottom: 10px;  
-}
