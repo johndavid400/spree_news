@@ -10,4 +10,6 @@ else
   gem "ruby-debug19"
 end
 
+gem 'haml'
+
 gemspec

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spree_news (0.0.1)
+    spree_news (0.0.3)
       haml
       spree_core (~> 1.0.0)
 
