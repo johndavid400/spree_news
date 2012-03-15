@@ -1,21 +1,28 @@
 SpreeNews
 =========
 
-Introduction goes here.
+This is an extension for Spree 1.0 that allows an Admin to create and manage posts in the admin panel. Posts that are marked as published will show up on the home page in a news ticker window that uses jquery to slide between posts. If there are no published posts, the news ticker window will not show up on the home page.
 
 
-Example
+Installation
 =======
 
-Example goes here.
+$ rails new mystore
+$ cd mystore
+$ spree install (might require running 'gem install spree' first)
 
-Testing
--------
+Then add the following to your Gemfile:
+$ gem 'spree_news'
+$ gem 'haml'
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+$ bundle install
+$ rails g spree_news:install (select 'yes' to run migrations)
+$ rails s
 
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
 
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+Installation
+=======
+
+To use, go to /admin and select the 'posts' tab. Create a new post with a title and description and select the 'published' check box to make it appear on the home page.
+
+Once created, navigate to '/' to see the news ticker show up below the products.
