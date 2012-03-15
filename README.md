@@ -7,13 +7,18 @@ This is an extension for Spree 1.0 that allows an Admin to create and manage pos
 Installation
 =======
 
+Create a new rails/spree app:
+
     $ rails new mystore
     $ cd mystore
     $ spree install (might require running 'gem install spree' first)
 
 Then add the following to your Gemfile:
+
     $ gem 'spree_news'
     $ gem 'haml'
+
+Then install the extension and start the server: 
 
     $ bundle install
     $ rails g spree_news:install (select 'yes' to run migrations)
