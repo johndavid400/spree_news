@@ -41,10 +41,8 @@ class Spree::Admin::PostsController < Spree::Admin::ResourceController
   def destroy
     @post = Spree::Post.find(params[:id])
     if @post.destroy
-      flash[:notice] = "Post deleted successfully"
       redirect_to admin_posts_path
     else
-      flash[:alert] = "Error deleting post"
       redirect_to :back
     end
   end
