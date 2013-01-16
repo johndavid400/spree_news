@@ -1,5 +1,5 @@
 = render :partial => 'spree/admin/shared/configuration_menu'
-%h1= "New Post"
+%h1= t("admin_posts.add_news")
 
 = form_for [:admin, @post] do |f|
   = render :partial => 'form', :locals => {:f => f}

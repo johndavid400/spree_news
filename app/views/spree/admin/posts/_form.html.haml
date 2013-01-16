@@ -1,13 +1,13 @@
 %p
-= f.label :title, t(:title)
+= f.label :title, Spree::Post.human_attribute_name(:title)
 %p
 = f.text_field :title
 %p
-= f.label :description, t(:description)
+= f.label :description, Spree::Post.human_attribute_name(:description)
 %p
 = f.text_area :description
 %p
-= f.label :published, t(:published)
+= f.label :published, Spree::Post.human_attribute_name(:published)
 %p
 = f.check_box :published
 
