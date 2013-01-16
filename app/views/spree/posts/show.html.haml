@@ -1,0 +1,7 @@
+%div{"data-hook" => "news"}
+  %div
+    %h6= @post.created_at.strftime("%d %B %Y")
+    %h6= @post.title
+    %br/
+    = @post.description
+
