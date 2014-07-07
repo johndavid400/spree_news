@@ -1,0 +1,11 @@
+<div data-hook="news">
+  <div>
+    <h6>
+      <%= l(@post.created_at, format: "%d %B %Y") %>
+    </h6>
+    <h1>
+      <%= @post.title %>
+    </h1>
+    <%= @post.description.html_safe %>
+  </div>
+</div>

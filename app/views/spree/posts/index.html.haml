@@ -1,8 +1,0 @@
-%div{"data-hook" => "news"}
-  %h1= t("posts") 
-  %ul
-    - @posts.each do |post|
-      %li
-        %div
-          %h6= l(post.created_at, format: "%d %B %Y")
-          = link_to post.title, post

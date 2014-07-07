@@ -17,6 +17,4 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_backend', '~> 2.2.0'
-  s.add_dependency 'haml'
-
 end
