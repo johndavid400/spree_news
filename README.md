@@ -1,7 +1,7 @@
 SpreeNews
 =========
 
-This is an extension for Spree 1.0 that allows an Admin to create and manage posts in the admin panel. Posts that are marked as published will show up on the home page in a news ticker window that uses jquery to slide between posts. If there are no published posts, the news ticker window will not show up on the home page.
+This is an extension for Spree 2.2 that allows an Admin to create and manage posts in the admin panel. Posts that are marked as published will show up on the home page in a news ticker window that uses jquery to slide between posts. If there are no published posts, the news ticker window will not show up on the home page.
 
 
 Installation

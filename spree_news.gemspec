@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_news'
-  s.version     = '0.0.5'
+  s.version     = '0.0.6'
   s.summary     = 'Adds a Javascript enabled scrolling news feed ticker wherever you call it'
   s.description = 'Provides an Admin view to create/edit posts which will be shown on the home page in a scrolling news ticker window below the products listing.'
   s.required_ruby_version = '>= 1.9.2'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_backend', '~> 2.0.0'
+  s.add_dependency 'spree_backend', '~> 2.2.0'
   s.add_dependency 'haml'
 
 end
