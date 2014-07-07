@@ -1,16 +1,16 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+ru:
   hello: "Hello world"
-  posts: "News"
+  posts: "Новости"
   admin_posts:
-    add_news: "Add news"
-    edit_news: "Edit news"
+    add_news: "Добавить новость"
+    edit_news: "Редактирование новости"
 
   activerecord:
     attributes:
       spree/post:
-        title: Header
-        description: Description
-        published: Published
+        title: Заголовок
+        description: Описание
+        published: Опубликовано

@@ -1,2 +1,2 @@
-//= require store/spree_core
+//= require spree/frontend
 //= require jquery.vticker-min.js

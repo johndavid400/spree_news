@@ -13,7 +13,7 @@ class Spree::Admin::PostsController < Spree::Admin::ResourceController
   end
 
   def create
-    @post = Spree::Post.new(params[:post])
+    @post = Spree::Post.new(post_params)
     if @post.save
       flash[:notice] = "Post saved successfully"
       redirect_to admin_posts_path
@@ -29,7 +29,7 @@ class Spree::Admin::PostsController < Spree::Admin::ResourceController
 
   def update
     @post = Spree::Post.find(params[:id])
-    if @post.update_attributes(params[:post])
+    if @post.update_attributes(post_params)
       flash[:notice] = "Post saved successfully"
       redirect_to admin_posts_path
     else
@@ -47,4 +47,10 @@ class Spree::Admin::PostsController < Spree::Admin::ResourceController
     end
   end
 
+  private
+  
+  def post_params
+    params.require(:post).permit(:title, :description, :published)
+  end
+  
 end

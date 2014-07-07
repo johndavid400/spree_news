@@ -1,0 +1,31 @@
+<% if Spree::Post.all.any? %>
+  <div class="news-ticker">
+    <h3>Latest News</h3>
+    <p></p>
+    <div id="news-container">
+      <ul>
+        <% Spree::Post.published.each do |post| %>
+          <li>
+            <div>
+              <h6>
+                <%= post.created_at.strftime("%B %d, %Y") %>
+              </h6>
+              <%= post.description %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <script>
+    $(function(){
+      $('#news-container').vTicker({
+        speed: 1000,
+        pause: 4000,
+        animation: 'fade',
+        mousePause: true,
+        showItems: 1
+      });
+    });
+  </script>
+<% end %>
