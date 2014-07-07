@@ -10,24 +10,18 @@ Installation
 Create a new rails/spree app:
 
     rails new mystore
+    spree install mystore
     cd mystore
-    spree install (might require running 'gem install spree' first)
 
 Then add the following to your Gemfile:
 
     gem 'spree_news'
-    gem 'haml'
 
 Then install the extension and start the server:
 
     bundle install
     rails g spree_news:install (select 'yes' to run migrations)
     rails s
-
-Depending on your project environment, you may need to clean your assets to make sure the JS and CSS load for the spree_news extension. Do this if the news ticker looks unstyled and the JS does not work:
-
-    rake assets:clean
-
 
 Usage
 =======

@@ -41,16 +41,18 @@ class Spree::Admin::PostsController < Spree::Admin::ResourceController
   def destroy
     @post = Spree::Post.find(params[:id])
     if @post.destroy
+      flash[:notice] = "Post removed successfully"
       redirect_to admin_posts_path
     else
+      flash[:alert] = "There was an error removing the post"
       redirect_to :back
     end
   end
 
   private
-  
+
   def post_params
     params.require(:post).permit(:title, :description, :published)
   end
-  
+
 end
